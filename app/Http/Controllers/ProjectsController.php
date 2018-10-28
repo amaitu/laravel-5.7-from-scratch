@@ -19,6 +19,16 @@ class ProjectsController extends Controller
         return view('projects.create');
     }
 
+    public function show()
+    {
+        return view('projects.create');
+    }
+
+    public function edit()
+    {
+        return view('projects.edit');
+    }
+
     public function store()
     {
         $project = new Project();
