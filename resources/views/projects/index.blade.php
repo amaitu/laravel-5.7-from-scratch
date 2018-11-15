@@ -8,10 +8,12 @@
     <ul>
         @foreach($projects as $project)
             <li>
-                <span>
-                {{ $project-> title }}
-                </span>
+                <a href="/projects/ {{ $project->id }}">
+                    <ul>
+                        {{ $project-> title }}
+                    </ul>
+                </a>
             </li>
-            @endforeach
+        @endforeach
     </ul>
 @endsection
